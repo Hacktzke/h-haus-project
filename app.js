@@ -38,3 +38,26 @@ CART_ICON.addEventListener("click", function () {
 CART_EXIT_ICON.addEventListener("click", function () {
   closeCart();
 });
+
+window.addEventListener("mouseup", function (event) {
+  if (
+    event.target != CART &&
+    event.target.parentNode != CART &&
+    event.target.parentNode.parentNode != CART &&
+    event.target.parentNode.parentNode.parentNode != CART
+  ) {
+    closeCart();
+  }
+});
+
+window.addEventListener("mouseup", function (event) {
+  if (
+    SIDENAV.classList.contains("show-sidenav") &&
+    event.target != SIDENAV &&
+    event.target.parentNode != SIDENAV &&
+    event.target.parentNode.parentNode != SIDENAV &&
+    event.target.parentNode.parentNode.parentNode != SIDENAV
+  ) {
+    toggleSidenav();
+  }
+});

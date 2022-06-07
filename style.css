@@ -56,12 +56,7 @@ nav {
   display: inline-block;
   cursor: pointer;
   width: 35px;
-  /* transition: 0.3s; */
 }
-
-/* #menu-icon:hover {
-    transform: scale(1.1);
-} */
 
 .bar1,
 .bar2,
@@ -111,6 +106,11 @@ nav {
   text-decoration-style: none;
   list-style: none;
   margin: 30px 0;
+  transition: 0.3s;
+}
+
+.sidenav li:hover {
+  transform: translate(10px);
 }
 
 .sidenav a {
@@ -119,6 +119,10 @@ nav {
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 300;
+}
+
+.sidenav a:active {
+  font-weight: 700;
 }
 
 .social-links {
@@ -130,8 +134,16 @@ nav {
   color: #f5f5f5;
   font-size: 2rem;
   margin: 30px 20px 30px 0px;
+  transition: 0.2s;
 }
 
+.social-links i:hover {
+  transform: translateY(-5px);
+}
+
+.social-links i:active {
+  transform: scale(1.2) translateY(-5px);
+}
 .show-sidenav {
   width: 250px;
 }
@@ -243,6 +255,22 @@ main {
   margin-bottom: 30px;
 }
 
+#newly-arrived .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#newly-arrived .new-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#newly-arrived .item h5 {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.1rem;
+}
+
 /* Follow Us Section */
 
 #follow-us {
@@ -264,6 +292,7 @@ main {
 #follow-us img {
   width: 100%;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 #follow-us i {
@@ -291,11 +320,20 @@ footer {
 #footer-menu li {
   list-style-type: none;
   margin: 10px 0;
+  transition: 0.3s;
 }
 
 #footer-menu a {
   text-decoration: none;
   color: #545454;
+}
+
+#footer-menu li:hover {
+  transform: translate(10px);
+}
+
+#footer-menu a:active {
+  font-weight: 700;
 }
 
 #subscribe-area {
