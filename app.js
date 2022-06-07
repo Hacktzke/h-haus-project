@@ -50,14 +50,14 @@ window.addEventListener("mouseup", function (event) {
   }
 });
 
-window.addEventListener("mouseup", function (event) {
-  if (
-    SIDENAV.classList.contains("show-sidenav") &&
-    event.target != SIDENAV &&
-    event.target.parentNode != SIDENAV &&
-    event.target.parentNode.parentNode != SIDENAV &&
-    event.target.parentNode.parentNode.parentNode != SIDENAV
-  ) {
-    toggleSidenav();
-  }
-});
+// window.addEventListener("mouseup", function (event) {
+//   if (
+//     SIDENAV.classList.contains("show-sidenav") &&
+//     event.target != SIDENAV &&
+//     event.target.parentNode != SIDENAV &&
+//     event.target.parentNode.parentNode != SIDENAV &&
+//     event.target.parentNode.parentNode.parentNode != SIDENAV
+//   ) {
+//     toggleSidenav();
+//   }
+// });

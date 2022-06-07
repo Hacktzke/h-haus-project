@@ -6,15 +6,23 @@ body {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
   font-style: italic;
 }
 
 h3 {
   font-size: 1.1rem;
+  font-weight: 300;
 }
 
+h4 {
+  font-weight: 300;
+}
+
+h6 {
+  font-family: "Dancing Script", cursive;
+}
 /* Button */
 
 .btn-med {
@@ -117,7 +125,6 @@ nav {
   text-decoration: none;
   color: #545454;
   text-transform: uppercase;
-  font-size: 1.2rem;
   font-weight: 300;
 }
 
@@ -174,21 +181,25 @@ nav {
   margin: 50px 10px 100px;
   color: #f5f5f5;
   white-space: nowrap;
+  display: flex;
+  flex-direction: column;
 }
 
-.cart-area h2 {
+.cart-area h3 {
   color: #545454;
+  text-transform: uppercase;
 }
 
 .cart-area a {
   background-color: #f5f5f5;
   color: #ebd0ba;
-  margin-bottom: 30px;
+  margin: auto;
 }
 
 .cart-area hr {
   background-color: #f5f5f5;
   height: 2px;
+  margin-bottom: 30px;
 }
 
 .cart-items {
@@ -255,34 +266,35 @@ main {
   margin-bottom: 30px;
 }
 
+#newly-arrived .new-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 #newly-arrived .item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 20px;
 }
 
-#newly-arrived .new-items {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#newly-arrived .item h5 {
-  font-family: "Dancing Script", cursive;
-  font-size: 1.1rem;
+#newly-arrived a {
+  margin-top: 30px;
 }
 
 /* Follow Us Section */
 
 #follow-us {
   max-width: 1026px;
-  margin: auto;
+  margin: 30px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 #follow-us h2 {
-  margin: 30px 0;
+  margin: 50px 0;
 }
 
 #follow-us a {
@@ -326,6 +338,7 @@ footer {
 #footer-menu a {
   text-decoration: none;
   color: #545454;
+  font-weight: 300;
 }
 
 #footer-menu li:hover {
@@ -350,7 +363,6 @@ footer {
 
 #subscribe-area form label {
   font-style: italic;
-  font-size: 1.2rem;
 }
 
 #subscribe-area form input {
@@ -360,7 +372,6 @@ footer {
   height: 20px;
   width: 350px;
   margin: 20px 0 10px;
-  font-size: 1.1rem;
   font-style: italic;
 }
 
@@ -369,7 +380,6 @@ footer {
   background-color: #e2d4c8;
   color: #545454;
   width: fit-content;
-  font-size: 1.2rem;
   font-style: italic;
   font-weight: 300;
   align-self: flex-end;
@@ -381,7 +391,8 @@ footer {
   transform: scale(1.1);
 }
 
-#subscribe-area h3 {
+#subscribe-area h4 {
+  justify-self: ;
   align-self: flex-end;
   margin-top: 50px;
   font-weight: 300;
