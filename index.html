@@ -33,7 +33,7 @@
           <img src="./images/H-Haus-300px.svg" alt="Logo of H.Haus" />
         </div>
         <div id="cart-icon">
-          <img src="./images/shopping_bag_icon.svg" alt="Shopping bag icon" />
+          <img src="./images/shopping-bag-icon.svg" alt="Shopping bag icon" />
         </div>
       </nav>
       <div class="sidenav">
@@ -61,13 +61,13 @@
           <div class="exit-bar2"></div>
         </div>
         <div class="cart-area">
-          <h2>Cart</h2>
+          <h2>Your Cart</h2>
           <hr>
           <div class="cart-items">
             <p>Your cart is currently empty...</h3>
           </div>
           <hr>
-         <a role="button" class="btn-med" href="#">Continue Shopping</a>
+         <a role="button" class="btn-med" href="#">Go to Shop</a>
         </div>
       </div>
       <div id="hero">
@@ -75,9 +75,58 @@
       </div>
     </header>
     <main>
+      <section id="newly-arrived">
+        <h2>Newly Arrived</h2>
+        <div class="new-items">
+          <div class="item">
+            <h5>H.Haus</h5>
+            <!-- <img src="./images/greek-rock-vase.jpg" alt="Image of the Greek Rock Vase"> -->
+            <h3 class="item-name">Headboard</h3>
+            <h4 class="item-price">$499</h4>
+          </div>
+          <div class="item"></div>
+          <div class="item"></div>
+        </div>
+      </section>
+      <section id="follow-us">
+        <h2>Follow us <a href="#">@ _h.haus_</a></h2>
+        <img src="./images/instagram-preview-image.jpg" alt="Collab of images from instagram">
+        <div class="social-links">
+          <a href="https://facebook.com" target="blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://instagram.com" target="blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://pinterest.nz" target="blank"
+            ><i class="fa-brands fa-pinterest"></i
+          ></a>
+        </div>
+      </section>
 
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-area">
+        <div id="footer-menu">
+          <img src="./images/H-Haus-300px.svg" alt="Footer logo of H.Haus">
+          <ul>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div id="subscribe-area">
+          <form action="submit">
+            <label for="email">Subscribe for our latest news and products</label>
+            <input type="email" name="email" id="email" placeholder="my email address">
+            <button type="submit">Join us</button>
+          </form>
+          <h3>J.Hertzke - 20210843</h3>
+        </div>
+      </div>
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>
