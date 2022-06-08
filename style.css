@@ -20,6 +20,11 @@ h4 {
   font-weight: 300;
 }
 
+h5 {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
 h6 {
   font-family: "Dancing Script", cursive;
 }
@@ -347,8 +352,7 @@ footer {
 }
 
 .footer-area .footer-menu ul {
-  padding-left: 30px;
-  margin-bottom: 30px;
+  margin-left: 30px;
 }
 
 .footer-area .footer-menu li {
@@ -374,7 +378,7 @@ footer {
 .footer-area .subscribe-area {
   display: flex;
   flex-direction: column;
-  padding-right: 30px;
+  margin-right: 30px;
 }
 
 .footer-area .subscribe-area form {
@@ -413,10 +417,62 @@ footer {
   transform: scale(1.1);
 }
 
-.footer-area .subscribe-area h4 {
-  align-self: flex-end;
-  margin-top: 50px;
-  font-weight: 300;
-  color: #545454;
+footer .author {
   font-style: italic;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  /* Footer */
+
+  .footer-area {
+    flex-direction: column;
+  }
+
+  .footer-area .footer-menu {
+    order: 2;
+  }
+
+  .footer-area .footer-menu ul {
+    margin: 0;
+    text-align: center;
+  }
+
+  .footer-area .footer-menu li {
+    margin: 20px 0;
+  }
+
+  .footer-area .subscribe-area {
+    order: 1;
+    margin: 30px 0;
+  }
+
+  .footer-area .subscribe-area form label {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .footer-area .subscribe-area form input {
+    padding: 0 10px;
+  }
+
+  footer .author {
+    padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Header */
+
+  header .nav-logo img {
+    width: 200px;
+  }
+
+  /* Footer Area */
+
+  .footer-area .subscribe-area form input {
+    width: auto;
+    margin: 30px 0;
+  }
 }
