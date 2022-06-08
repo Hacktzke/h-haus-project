@@ -1,7 +1,7 @@
 const MENU_ICON = document.querySelector("#menu-icon");
-const SIDENAV = document.querySelector(".sidenav");
+const SIDENAV = document.querySelector("#sidenav");
 const CART_ICON = document.querySelector("#cart-icon");
-const CART = document.querySelector(".cart");
+const CART = document.querySelector("#cart");
 const CART_EXIT_ICON = document.querySelector("#exit-icon");
 
 const toggleSidenav = () => {
@@ -10,7 +10,29 @@ const toggleSidenav = () => {
   if (CART.classList.contains("show-cart")) {
     closeCart();
   }
+  setTimeout(() => {
+    MENU_ICON.classList.toggle("move-menu-icon");
+  }, 200);
 };
+
+// const openSidenav = () => {
+//   MENU_ICON.classList.add("change");
+//   SIDENAV.classList.add("show-sidenav");
+//   if (CART.classList.contains("show-cart")) {
+//     closeCart();
+//   }
+//   setTimeout(() => {
+//     MENU_ICON.classList.add("move-menu-icon");
+//   }, 200);
+// };
+
+// const closeSidenav = () => {
+//   MENU_ICON.classList.remove("change");
+//   SIDENAV.classList.remove("show-sidenav");
+//   setTimeout(() => {
+//     MENU_ICON.classList.remove("move-menu-icon");
+//   }, 200);
+// };
 
 const openCart = () => {
   CART_ICON.classList.toggle("exit-change");
@@ -50,14 +72,18 @@ window.addEventListener("mouseup", function (event) {
   }
 });
 
-// window.addEventListener("mouseup", function (event) {
-//   if (
-//     SIDENAV.classList.contains("show-sidenav") &&
-//     event.target != SIDENAV &&
-//     event.target.parentNode != SIDENAV &&
-//     event.target.parentNode.parentNode != SIDENAV &&
-//     event.target.parentNode.parentNode.parentNode != SIDENAV
-//   ) {
-//     toggleSidenav();
-//   }
-// });
+window.addEventListener("mouseup", function (event) {
+  if (
+    SIDENAV.classList.contains("show-sidenav") &&
+    event.target != MENU_ICON &&
+    event.target.parentNode != MENU_ICON
+  ) {
+    if (
+      event.target != SIDENAV &&
+      event.target.parentNode != SIDENAV &&
+      event.target.parentNode.parentNode != SIDENAV
+    ) {
+      toggleSidenav();
+    }
+  }
+});
