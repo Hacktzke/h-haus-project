@@ -3,6 +3,7 @@ const SIDENAV = document.querySelector("#sidenav");
 const CART_ICON = document.querySelector("#cart-icon");
 const CART = document.querySelector("#cart");
 const CART_EXIT_ICON = document.querySelector("#exit-icon");
+const MAIL_ICON = document.querySelector("#mail-icon");
 
 const toggleSidenav = () => {
   MENU_ICON.classList.toggle("change");
