@@ -503,6 +503,91 @@ nav {
   width: 80px;
 }
 
+/* PHONE ICON */
+
+.phone-icon {
+  position: relative;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  position: absolute;
+  transition: .6s;
+}
+
+.icon:hover {
+  transform: translateY(-20px);
+}
+
+.phone-icon:hover .phone-shadow {
+  width: 60px;
+}
+
+
+.icon:hover .wave {
+  animation: waveIn 1.2s ease-out;
+  transform-origin: 50% 50%;
+  
+}
+
+.wave-sm, .wave-md, .wave-lg {
+  display: none;
+}
+.icon:hover .wave-sm {
+  display: block;
+  animation-delay: .3s;
+}
+
+.icon:hover .wave-md {
+  display: block;
+  animation-delay: .45s;
+}
+
+.icon:hover .wave-lg {
+  display: block;
+  animation-delay: .6s;
+}
+
+@keyframes waveIn {
+  from {
+    display: block;
+    opacity: 0;
+    transform: scale(.3) translate(-20px,10px);
+  }
+  
+  50% {
+    transform: translate(0,0);
+    opacity: 1;
+  }
+}
+
+.phone-shadow {
+  position: absolute;
+  top: 100px;
+  left: 35px;
+  width: 100px;
+  height: 15px;
+  transition: 0.4s;
+  transform: translateX(-50%);
+  -webkit-transition: 0.4s;
+  -webkit-transform: translateX(-50%);
+  -moz-transition: 0.4s;
+  -moz-transform: translateX(-50%);
+  border-radius: 100%;
+  background: radial-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0)
+  ); 
+}
+
+
+
 /* PIN ICON */
 
 .pin-icon-area {
