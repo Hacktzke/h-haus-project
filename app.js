@@ -4,6 +4,7 @@ const CART_ICON = document.querySelector("#cart-icon");
 const CART = document.querySelector("#cart");
 const CART_EXIT_ICON = document.querySelector("#exit-icon");
 const MAIL_ICON = document.querySelector("#mail-icon");
+const CONTACT_INPUTS = document.querySelectorAll(".input-area");
 
 const toggleSidenav = () => {
   MENU_ICON.classList.toggle("change");
@@ -87,4 +88,13 @@ window.addEventListener("mouseup", function (event) {
       toggleSidenav();
     }
   }
+});
+
+// CONTACT FORM
+
+CONTACT_INPUTS.forEach((input) => {
+  input.childNodes[3].addEventListener("click", function () {
+    // input.classList.add("incr-input-height");
+    input.childNodes[1].classList.toggle("decr-label-size");
+  });
 });
