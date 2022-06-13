@@ -784,6 +784,33 @@ nav {
   color: rgb(163, 5, 5);
 }
 
+/* PRIVACY POLICY PAGE */
+
+.fine-print-block {
+  width: 80%;
+  max-width: 500px;
+  margin: 30px auto 60px auto;
+}
+
+.fine-print-block .title {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.fine-print-block p {
+  font-size: 0.8rem;
+}
+
+.fine-print-block li {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 10px 0 10px 30px;
+}
+
+.fine-print-block a {
+  color: #545454;
+}
+
 /* FOLLOW US SECTION */
 
 .follow-us {
