@@ -291,7 +291,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px 0;
+  margin-top: 30px;
 }
 
 .first-block .title {
@@ -337,7 +337,7 @@ nav {
 
 .contact-block p {
   width: 80%;
-  max-width: 800px;
+  max-width: 768px;
 }
 
 /* PHONE ICON */
@@ -710,6 +710,13 @@ nav {
   padding: 30px;
   text-align: left;
   width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
 }
 
 .contact-form .input-area {
@@ -717,14 +724,14 @@ nav {
   flex-direction: column;
 }
 
-.contact-form label {
+.contact-form .contact-label {
   position: relative;
   top: 30px;
   transition: 0.3s;
   height: 20px;
 }
 
-.contact-form input,
+.contact-form .contact-input,
 .contact-form textarea {
   border: none;
   border-bottom: 2px solid #545454;
@@ -737,10 +744,31 @@ nav {
 
 .contact-form .checkbox-area {
   margin: 0;
-  font-size: 0.6rem;
+  height: 30px;
+  font-size: 0.8rem;
+  font-style: italic;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  border: none;
+  font-size: 1.1rem;
+  background-color: #e2d4c8;
+  color: #545454;
+  font-style: italic;
+  align-self: flex-end;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  transform: scale(1.1);
+}
+
+.contact-form button:active {
+  font-weight: 700;
 }
 
 .decr-label-size {
@@ -755,7 +783,8 @@ nav {
 .red {
   color: rgb(163, 5, 5);
 }
-/* Follow Us Section */
+
+/* FOLLOW US SECTION */
 
 .follow-us {
   width: 80%;
@@ -864,6 +893,9 @@ footer {
   transform: scale(1.1);
 }
 
+.footer-area .subscribe-area form button:active {
+  font-weight: 700;
+}
 footer .author {
   font-style: italic;
   text-align: center;
