@@ -35,6 +35,18 @@ p {
 
 /* Button */
 
+.btn-sm {
+  background-color: #ebd0ba;
+  text-decoration: none;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 300;
+  padding: 10px 30px;
+  opacity: 0.9;
+  transition: 0.2s;
+}
+
 .btn-med {
   background-color: #ebd0ba;
   text-decoration: none;
@@ -43,11 +55,12 @@ p {
   font-size: 1.2rem;
   font-weight: 300;
   padding: 10px 50px;
-  opacity: 0.9;
+  /* opacity: 0.9; */
   transition: 0.2s;
 }
 
-.btn-med:hover {
+.btn-med:hover,
+.btn-sm:hover {
   transform: scale(1.1);
 }
 
@@ -790,6 +803,9 @@ nav {
   width: 80%;
   max-width: 500px;
   margin: 30px auto 60px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .fine-print-block .title {
@@ -807,8 +823,12 @@ nav {
   margin: 10px 0 10px 30px;
 }
 
-.fine-print-block a {
+.fine-print-block .email-link {
   color: #545454;
+}
+
+.fine-print-block .return-home-btn {
+  margin: 60px 0;
 }
 
 /* FOLLOW US SECTION */
