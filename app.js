@@ -6,6 +6,8 @@ const CART_EXIT_ICON = document.querySelector("#exit-icon");
 const MAIL_ICON = document.querySelector("#mail-icon");
 const CONTACT_INPUTS = document.querySelectorAll(".input-area");
 
+const inputs = [];
+
 const toggleSidenav = () => {
   MENU_ICON.classList.toggle("change");
   SIDENAV.classList.toggle("show-sidenav");
@@ -93,8 +95,41 @@ window.addEventListener("mouseup", function (event) {
 // CONTACT FORM
 
 CONTACT_INPUTS.forEach((input) => {
-  input.childNodes[3].addEventListener("click", function () {
-    // input.classList.add("incr-input-height");
-    input.childNodes[1].classList.toggle("decr-label-size");
+  input.childNodes[3].addEventListener("click", function (e) {
+    input.classList.remove("red");
+    input.childNodes[1].classList.add("decr-label-size");
+    if (input.classList.contains("comment-area")) {
+      input.childNodes[3].style.height = "100px";
+    }
   });
 });
+
+window.addEventListener("click", function (e) {
+  CONTACT_INPUTS.forEach((input) => {
+    if (
+      e.target != input.childNodes[3] &&
+      input.childNodes[1].classList.contains("decr-label-size") &&
+      input.childNodes[3].value == ""
+    ) {
+      input.childNodes[1].classList.remove("decr-label-size");
+      input.childNodes[3].style.height = "30px";
+      input.classList.add("red");
+    }
+  });
+});
+
+// CONSTRUCTCOR FUNCTION
+
+// function ContactInput(labelArea, inputArea) {
+//   this.labelArea = labelArea;
+//   this.inputArea = inputArea;
+//   let clicked = false;
+// }
+
+// for (let i = 0; i < CONTACT_INPUTS.length; i++) {
+//   inputs[i] = {
+//     labelArea: CONTACT_INPUTS[i].childNodes[1],
+//     inputArea: CONTACT_INPUTS[i].childNodes[1],
+//     clicked: false,
+//   };
+// }

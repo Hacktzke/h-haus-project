@@ -709,15 +709,12 @@ nav {
   background-color: #e2d4c8;
   padding: 30px;
   text-align: left;
+  width: 300px;
 }
 
 .contact-form .input-area {
   display: flex;
   flex-direction: column;
-
-  /* /* border: none; */
-  /* border-bottom: 2px solid #545454; */
-  /* background-color: #e2d4c8; */
 }
 
 .contact-form label {
@@ -727,14 +724,23 @@ nav {
   height: 20px;
 }
 
-.contact-form input {
+.contact-form input,
+.contact-form textarea {
   border: none;
   border-bottom: 2px solid #545454;
+  color: #545454;
   background-color: #e2d4c8;
   margin-bottom: 20px;
-  font-style: italic;
   height: 30px;
   transition: 0.5s;
+}
+
+.contact-form .checkbox-area {
+  margin: 0;
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .decr-label-size {
@@ -742,10 +748,13 @@ nav {
   transform: translateY(-30px);
 }
 
-/* .incr-input-height {
-  height: 40px;
-} */
+.incr-input-height {
+  height: 100px;
+}
 
+.red {
+  color: rgb(163, 5, 5);
+}
 /* Follow Us Section */
 
 .follow-us {
