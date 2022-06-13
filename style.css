@@ -89,6 +89,11 @@ p {
 /* ***** BODY CONTENT ***** */
 
 /* Header Area */
+
+.header {
+  position: relative;
+}
+
 .index-header {
   height: 80vh;
   background-image: url(./images/hero-background-image.png);
@@ -288,7 +293,7 @@ nav {
 
 /* Hero Area */
 
-.index-hero {
+.hero-area {
   width: 100%;
   position: absolute;
   top: 50%;
@@ -327,6 +332,41 @@ nav {
 
 .first-block a {
   margin-top: 30px;
+}
+
+/* ABOUT PAGE */
+
+.about-header {
+  height: 60vh;
+  background-image: url(./images/about-hero-image.jpg);
+  background-position: top;
+  background-size: cover;
+}
+
+.about-block {
+  width: 100%;
+  margin: 60px auto;
+  max-width: 768px;
+}
+
+.about-block .text-area {
+  text-align: justify;
+}
+
+.about-block .text-area::first-letter {
+  font-size: 300%;
+  font-weight: 200;
+  padding-left: 10px;
+}
+
+.about-block .profile-area {
+  display: flex;
+  align-items: center;
+}
+
+.about-block .profile-area img {
+  width: 200px;
+  border-radius: 50%;
 }
 
 /* CONTACT PAGE - CONTACT AREA */

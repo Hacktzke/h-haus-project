@@ -19,25 +19,6 @@ const toggleSidenav = () => {
   }, 200);
 };
 
-// const openSidenav = () => {
-//   MENU_ICON.classList.add("change");
-//   SIDENAV.classList.add("show-sidenav");
-//   if (CART.classList.contains("show-cart")) {
-//     closeCart();
-//   }
-//   setTimeout(() => {
-//     MENU_ICON.classList.add("move-menu-icon");
-//   }, 200);
-// };
-
-// const closeSidenav = () => {
-//   MENU_ICON.classList.remove("change");
-//   SIDENAV.classList.remove("show-sidenav");
-//   setTimeout(() => {
-//     MENU_ICON.classList.remove("move-menu-icon");
-//   }, 200);
-// };
-
 const openCart = () => {
   CART_ICON.classList.toggle("exit-change");
   CART.classList.add("show-cart");
